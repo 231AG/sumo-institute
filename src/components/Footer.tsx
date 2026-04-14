@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
+import sitLogo from "@/assets/logo.jpeg";
 
 export function Footer() {
   return (
@@ -9,9 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center">
-                <span className="text-secondary font-[family-name:var(--font-heading)] font-extrabold text-lg">S</span>
-              </div>
+              <img src={sitLogo} alt="Sumo Institute of Technology" className="w-10 h-10 rounded-lg object-cover" />
               <div>
                 <span className="font-[family-name:var(--font-heading)] font-bold text-lg block leading-tight">Sumo Institute</span>
                 <span className="text-gold text-xs tracking-wider uppercase">of Technology</span>

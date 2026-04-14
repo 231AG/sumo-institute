@@ -1,6 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import sitLogo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -23,9 +24,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center">
-              <span className="text-secondary font-[family-name:var(--font-heading)] font-extrabold text-lg">S</span>
-            </div>
+            <img src={sitLogo} alt="Sumo Institute of Technology" className="w-10 h-10 rounded-lg object-cover" />
             <div className="hidden sm:block">
               <span className="text-secondary-foreground font-[family-name:var(--font-heading)] font-bold text-lg leading-tight block">
                 Sumo Institute
